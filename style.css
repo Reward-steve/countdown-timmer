@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+}
+
+header {
+    background: black;
+    color: gray;
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive;
+
+}
+
+.carry-timmer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: gray;
+    height: 95vh;
+}
+
+
+.countdown-container {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    color: white;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    height: 96px;
+    width: 105px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    border-radius: 0 0 0 22px;
+    filter: drop-shadow(2px 4px 3px cyan);
+    box-shadow: -4px -3px 3px 5px #316060;
+    animation: div 6s infinite linear;
+}
+
+@keyframes div {
+    0% {
+        border-top: 2px solid red;
+    }
+
+    10% {
+        border-right: 2px solid red;
+    }
+
+    20% {
+        border-bottom: 2px solid blue;
+    }
+
+    30% {
+        border-left: 2px solid blue;
+    }
+
+    40% {
+        border-top: 2px solid cyan;
+    }
+
+    40% {
+        border-right: 2px solid cyan;
+    }
+
+    50% {
+        border-bottom: 2px solid lime;
+    }
+
+    60% {
+        border-right: 2px solid lime;
+    }
+}
+
+
+
+.text {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    filter: blur(0.9px);
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.cont {
+    color: white;
+}
